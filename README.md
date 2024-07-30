@@ -3,16 +3,32 @@ Demo tạo theme HubSpot sử dụng vuejs load data post data từ jsonplacehol
 
 ## Tạo một theme mới
 ```
-hs create website-theme my-theme
+hs create website-theme theme-vue-posts
 ```
 
-## Rename theme default name
++ Đổi tên theme
+    ```
+        -- theme.json
+        "label": "CMS theme use Vue.js",
+    ```
+
++ Deploy theme lên HubSpot:
+    ```
+    hs upload my-theme theme-vue-posts
+    ```
+
++ Test lại trên trang hubspot
+
+## Tạo một mẫu (template) mới:
 ```
--- theme.json
-"label": "CMS theme use Vue.js",
+hs create template templates/vue-posts
 ```
 
-#### Deploy theme lên HubSpot:
++ Đặt lại tên cho template mới tạo
+
++ Upload/Watch & Test lại trên trang hubspot
+
+## Tạo một module:
 ```
-hs upload my-theme my-theme
+hs create module modules\posts
 ```

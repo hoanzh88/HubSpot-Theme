@@ -1,11 +1,14 @@
-[
-  {
-    "default": "<h1>Hello, world!</h1>",
-    "label": "Rich text field",
-    "locked": false,
-    "name": "text",
-    "required": false,
-    "type": "richtext",
-    "validation_regex": ""
-  }
-]
+[ {
+  "id" : "997c60d7-376c-9496-5b33-e8ae3eb7b1fe1",
+  "name" : "post_limit",
+  "display_width" : null,
+  "label" : "Limit",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "default" : 5,
+  "min" : 1,
+  "max" : 100,
+  "step" : 1,
+  "type" : "number"
+} ]

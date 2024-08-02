@@ -1,0 +1,31 @@
+<!-- module html  -->
+{% raw %}
+<div id="app-post-add">
+    <div class="col-md-12">
+        <div class="card mb-4">
+            <div class="card-header">
+              <h5 class="card-tile mb-0">Add new Post</h5>
+            </div>
+            <div class="card-body">
+                <div class="alert alert-success" v-if="message.success" role="alert">
+                    {{ message.success }}
+                </div>
+                <div class="alert alert-danger" v-if="message.error" role="alert">
+                    {{ message.error }}
+                </div>
+                <form @submit.prevent="submitForm">
+                    <div class="form-group">
+                    <label for="title">Title:</label>
+                    <input type="title" class="form-control" id="title" placeholder="input title" v-model="formData.title">
+                    </div>
+                    <div class="form-group">
+                    <label for="body">Body:</label>
+                    <textarea name="body" class="form-control" id="body" placeholder="input body" v-model="formData.body"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endraw %}

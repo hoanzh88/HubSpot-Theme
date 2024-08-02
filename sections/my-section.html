@@ -1,0 +1,16 @@
+<!--
+    templateType: section
+    label: My Section
+    isAvailableForNewContent: true
+-->
+{% dnd_section %}
+  {% dnd_column %}
+    {% dnd_row %}
+      {% dnd_module
+        path="@hubspot/rich_text",
+        html={{ context.content or '<div style="text-align: center;"><h1>My New Section</h1></div>' }}
+      %}
+      {% end_dnd_module %}
+    {% end_dnd_row %}
+  {% end_dnd_column %}
+{% end_dnd_section %}

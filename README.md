@@ -92,7 +92,7 @@ Tương tự như tạo template:
 ```
 
 ## Hướng dẫn tải theme lên HubSpot
-+ Upload bằng file zip
++ Upload theme bằng file zip
     ```
     Bước 1: Đăng nhập vào HubSpot.
     Bước 2: Sau khi đăng nhập, vào phần Settings (Cài đặt) từ thanh điều hướng chính.
@@ -101,7 +101,7 @@ Tương tự như tạo template:
     Bước 5: Chọn file ZIP của theme và tải lên.
     ```
 
-+ Upload file trên trang “Design Manager”
++ Upload theme trên trang “Design Manager”
     ```
     Bước 1: Đăng nhập vào HubSpot.
     Bước 2: Đi tới mục "Content" > "Design Manager"
@@ -109,7 +109,7 @@ Tương tự như tạo template:
     Bước 4: Chọn file của theme và tải lên.
     ```
 
-+ Upload dùng HubSpot CLI
++ Upload theme dùng HubSpot CLI
     ```
     hs upload <local-destination> <remote-destination>
     ```

@@ -108,3 +108,8 @@ Tương tự như tạo template:
     Bước 3: Nhấp vào "File" > "Upload file".
     Bước 4: Chọn file của theme và tải lên.
     ```
+
++ Upload dùng HubSpot CLI
+    ```
+    hs upload <local-destination> <remote-destination>
+    ```

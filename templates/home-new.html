@@ -1,0 +1,56 @@
+<!--
+    templateType: page
+    label: Home Page
+    isAvailableForNewContent: true
+-->
+{% extends "./layouts/base.html" %}
+
+{% block slideshow %}
+  {% dnd_area "dnd_area_slide"  label="Main Slide" %}
+    {% dnd_section %}
+        {% dnd_module path="/theme-use-Vue.js/modules/slide.module" %}{% end_dnd_module %}
+    {% end_dnd_section %}
+  {% end_dnd_area %}
+{% endblock slideshow %}
+
+
+{% block body %}
+    {% dnd_area "dnd_area"  label="Main section",  class="body-container body-container--about" %}
+        {% dnd_section %}
+            {% dnd_module path="/theme-use-Vue.js/modules/heading.module" %}{% end_dnd_module %}
+        {% end_dnd_section %}
+        {% dnd_section %}
+            {% dnd_module path="/theme-use-Vue.js/modules/divider.module" %}{% end_dnd_module %}
+        {% end_dnd_section %}
+        {% dnd_section %}
+            {% dnd_module path="/theme-use-Vue.js/modules/centered-hero.module" %}{% end_dnd_module %}
+        {% end_dnd_section %}
+        {% dnd_section %}
+            {% dnd_module path="/theme-use-Vue.js/modules/divider.module" %}{% end_dnd_module %}
+        {% end_dnd_section %}
+        {% dnd_section %}
+            {% dnd_module path="/theme-use-Vue.js/modules/centered-hero-2.module" %}{% end_dnd_module %}
+        {% end_dnd_section %}
+        {% dnd_section %}
+            {% dnd_module path="/theme-use-Vue.js/modules/divider.module" %}{% end_dnd_module %}
+        {% end_dnd_section %}
+        {% dnd_section %}
+            {% dnd_module path="/theme-use-Vue.js/modules/centered-hero-3.module" %}{% end_dnd_module %}
+        {% end_dnd_section %}
+        {% dnd_section %}
+            {% dnd_module path="/theme-use-Vue.js/modules/divider.module" %}{% end_dnd_module %}
+        {% end_dnd_section %}
+        {% dnd_section %}
+            {% dnd_module path="/theme-use-Vue.js/modules/centered-hero-4.module" %}{% end_dnd_module %}
+        {% end_dnd_section %}
+        {% dnd_section %}
+            {% dnd_module path="/theme-use-Vue.js/modules/divider.module" %}{% end_dnd_module %}
+        {% end_dnd_section %}
+        {% dnd_section %}
+            {% dnd_module path="/theme-use-Vue.js/modules/centered-hero-5.module" %}{% end_dnd_module %}
+        {% end_dnd_section %}
+        {% dnd_section %}
+            {% dnd_module path="/theme-use-Vue.js/modules/divider.module" %}{% end_dnd_module %}
+        {% end_dnd_section %}
+    {% end_dnd_area %}
+{% endblock body %}
